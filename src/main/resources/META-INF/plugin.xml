@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>test.test1</id>
+    <idea-version since-build="131" />
+    <name>Plugin display name heraadsadsae</name>
+    <vendor email="support@yourcodsampany.com" url="http://www.yoasdaurcompany.com">YourCompaadsany</vendor>
+
+    <description><![CDATA[
+    Ciaosndsjidosafhdsifhdsfidshfu
+    fnsdaiofsduiofjdsaf
+    fsdjaifpdsjfiasdjfs9da0fids
+    fsdjaiofasdj
+    sdjfaifjisa9dfjisadfjdis9fds
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <project-components>
+        <component>
+            <implementation-class>test.TestProjectComponent</implementation-class>
+        </component>
+    </project-components>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <moduleBuilder  />
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="MyPlugin.SampleMenu" text="Greeting" description="Greeting menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="test.TestAction" id="testId" text="hello" description="hello" />
+        </group>
+    </actions>
+
+    <change-notes>hello</change-notes>
+</idea-plugin>
